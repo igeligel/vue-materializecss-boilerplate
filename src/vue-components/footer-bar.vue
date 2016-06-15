@@ -18,16 +18,24 @@
           </p>
           <ul>
             <li>
-              <a href="#" class="footer-information">Point 1</a>
+              <a href="#" class="footer-information">
+                Point 1
+              </a>
             </li>
             <li>
-              <a href="#" class="footer-information">Point 2</a>
+              <a href="#" class="footer-information">
+                Point 2
+              </a>
             </li>
             <li>
-              <a href="#" class="footer-information">Point 3</a>
+              <a href="#" class="footer-information">
+                Point 3
+              </a>
             </li>
             <li>
-              <a href="#" class="footer-information">Point 4</a>
+              <a href="#" class="footer-information">
+                Point 4
+              </a>
             </li>
           </ul>
         </div>
@@ -37,27 +45,41 @@
           </p>
           <ul>
             <li>
-              <a href="#" class="footer-information">Point 1</a>
+              <a href="#" class="footer-information">
+                Point 1
+              </a>
             </li>
             <li>
-              <a href="#" class="footer-information">Point 2</a>
+              <a href="#" class="footer-information">
+                Point 2
+              </a>
             </li>
           </ul>
         </div>
         <div class="col m3 s12">
           <p class="social-icons-paragraph">
-            <a class="white-text"><i class="fa fa-github" aria-hidden="true"></i></a>
-            <a class="white-text"><i class="fa fa-paypal" aria-hidden="true"></i></a>
+            <a class="white-text">
+              <i class="fa fa-github" aria-hidden="true"></i>
+            </a>
+            <a class="white-text">
+              <i class="fa fa-paypal" aria-hidden="true"></i>
+            </a>
           </p>
           <ul>
             <li>
-              <a href="#" class="footer-information">Point 1</a>
+              <a href="#" class="footer-information">
+                Point 1
+              </a>
             </li>
             <li>
-              <a href="#" class="footer-information">Point 2</a>
+              <a href="#" class="footer-information">
+                Point 2
+              </a>
             </li>
             <li>
-              <a href="#" class="footer-information">Point 3</a>
+              <a href="#" class="footer-information">
+                Point 3
+              </a>
             </li>
           </ul>
         </div>
@@ -89,17 +111,14 @@
 <script>
 module.exports = {
   props: {
-
   },
   ready: function () {
-
   },
   data() {
     return {
     }
   },
   computed: {
-
   }
 }
 </script>
