@@ -1,15 +1,17 @@
 <template>
-  <navbar></navbar>
-  <main>
-    <div class="container">
-      <router-view></router-view>
-    </div>
-  </main>
-  <footer-bar></footer-bar>
+  <div class="wrapper">
+    <navbar></navbar>
+    <main>
+      <div class="container">
+        <router-view></router-view>
+      </div>
+    </main>
+    <footer-bar></footer-bar>
+  </div>
 </template>
 
 <style>
-body {
+.wrapper {
   display: flex;
   min-height: 100vh;
   flex-direction: column;
