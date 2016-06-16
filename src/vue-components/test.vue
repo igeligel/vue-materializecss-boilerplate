@@ -20,7 +20,7 @@
   <div class="row">
     <div class="col l12 m12 s12">
       <div class="parallax-container">
-        <div class="parallax"><img src="../assets/images/banner.png" alt="" /></div>
+        <div class="parallax"><img src="https://upload.wikimedia.org/wikipedia/commons/a/ae/Close-up_Veil_Nebula.jpg" alt="" /></div>
       </div>
     </div>
   </div>
