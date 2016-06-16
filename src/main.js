@@ -9,15 +9,15 @@ Vue.use(VueRouter);
 var router = new VueRouter();
 
 router.map({
-    '/': {
-        component: Home
-    },
-    'home': {
-        component: Home
-    },
-    '/test': {
-        component: Test
-    }
+  '/': {
+    component: Home
+  },
+  'home': {
+    component: Home
+  },
+  '/test': {
+    component: Test
+  }
 });
 
 router.afterEach(function(transition) {
