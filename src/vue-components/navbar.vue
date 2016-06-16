@@ -2,7 +2,7 @@
   <header>
     <nav class="white" role="navigation">
       <div class="nav-wrapper container">
-        <a id="logo-container" href="#" class="brand-logo" style="color: #616161">Logo</a>
+        <a id="logo-container" v-link="{ path: '/home'}" class="brand-logo" style="color: #616161">Logo</a>
         <ul class="right hide-on-med-and-down">
           <template v-for="menuEntry in menu">
             <li v-bind:class="{ active : menuEntry.active}"><a v-link="{ path: menuEntry.path}" style="color: #00897b" v-on:click="makeActive(menuEntry, $event)">{{menuEntry.name}}</a></li>
