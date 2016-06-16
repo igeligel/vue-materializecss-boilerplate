@@ -10348,7 +10348,7 @@
 
 
 	// module
-	exports.push([module.id, "\r\n  body {\r\n    display: -webkit-box;\r\n    display: -ms-flexbox;\r\n    display: flex;\r\n    min-height: 100vh;\r\n    -webkit-box-orient: vertical;\r\n    -webkit-box-direction: normal;\r\n        -ms-flex-direction: column;\r\n            flex-direction: column;\r\n  }\r\n  main {\r\n    -webkit-box-flex: 1;\r\n        -ms-flex: 1 0 auto;\r\n            flex: 1 0 auto;\r\n  }\r\n", ""]);
+	exports.push([module.id, "\r\nbody {\r\n  display: -webkit-box;\r\n  display: -ms-flexbox;\r\n  display: flex;\r\n  min-height: 100vh;\r\n  -webkit-box-orient: vertical;\r\n  -webkit-box-direction: normal;\r\n      -ms-flex-direction: column;\r\n          flex-direction: column;\r\n}\r\n\r\nmain {\r\n  -webkit-box-flex: 1;\r\n      -ms-flex: 1 0 auto;\r\n          flex: 1 0 auto;\r\n}\r\n", ""]);
 
 	// exports
 
@@ -10692,14 +10692,15 @@
 	// </template>
 	//
 	// <style>
-	//   body {
-	//     display: flex;
-	//     min-height: 100vh;
-	//     flex-direction: column;
-	//   }
-	//   main {
-	//     flex: 1 0 auto;
-	//   }
+	// body {
+	//   display: flex;
+	//   min-height: 100vh;
+	//   flex-direction: column;
+	// }
+	//
+	// main {
+	//   flex: 1 0 auto;
+	// }
 	// </style>
 	//
 	// <script>
@@ -27369,16 +27370,24 @@
 	//           </p>
 	//           <ul>
 	//             <li>
-	//               <a href="#" class="footer-information">Point 1</a>
+	//               <a href="#" class="footer-information">
+	//                 Point 1
+	//               </a>
 	//             </li>
 	//             <li>
-	//               <a href="#" class="footer-information">Point 2</a>
+	//               <a href="#" class="footer-information">
+	//                 Point 2
+	//               </a>
 	//             </li>
 	//             <li>
-	//               <a href="#" class="footer-information">Point 3</a>
+	//               <a href="#" class="footer-information">
+	//                 Point 3
+	//               </a>
 	//             </li>
 	//             <li>
-	//               <a href="#" class="footer-information">Point 4</a>
+	//               <a href="#" class="footer-information">
+	//                 Point 4
+	//               </a>
 	//             </li>
 	//           </ul>
 	//         </div>
@@ -27388,27 +27397,41 @@
 	//           </p>
 	//           <ul>
 	//             <li>
-	//               <a href="#" class="footer-information">Point 1</a>
+	//               <a href="#" class="footer-information">
+	//                 Point 1
+	//               </a>
 	//             </li>
 	//             <li>
-	//               <a href="#" class="footer-information">Point 2</a>
+	//               <a href="#" class="footer-information">
+	//                 Point 2
+	//               </a>
 	//             </li>
 	//           </ul>
 	//         </div>
 	//         <div class="col m3 s12">
 	//           <p class="social-icons-paragraph">
-	//             <a class="white-text"><i class="fa fa-github" aria-hidden="true"></i></a>
-	//             <a class="white-text"><i class="fa fa-paypal" aria-hidden="true"></i></a>
+	//             <a class="white-text">
+	//               <i class="fa fa-github" aria-hidden="true"></i>
+	//             </a>
+	//             <a class="white-text">
+	//               <i class="fa fa-paypal" aria-hidden="true"></i>
+	//             </a>
 	//           </p>
 	//           <ul>
 	//             <li>
-	//               <a href="#" class="footer-information">Point 1</a>
+	//               <a href="#" class="footer-information">
+	//                 Point 1
+	//               </a>
 	//             </li>
 	//             <li>
-	//               <a href="#" class="footer-information">Point 2</a>
+	//               <a href="#" class="footer-information">
+	//                 Point 2
+	//               </a>
 	//             </li>
 	//             <li>
-	//               <a href="#" class="footer-information">Point 3</a>
+	//               <a href="#" class="footer-information">
+	//                 Point 3
+	//               </a>
 	//             </li>
 	//           </ul>
 	//         </div>
@@ -27454,7 +27477,7 @@
 /* 20 */
 /***/ function(module, exports) {
 
-	module.exports = "\r\n  <footer class=\"page-footer teal darken-3\">\r\n    <div class=\"container\">\r\n      <div class=\"row\">\r\n        <div class=\"col m3 s12\">\r\n          <p class=\"footer-paragraph\">\r\n            Column 1\r\n          </p>\r\n          <ul>\r\n            <li>\r\n              <a href=\"#\" class=\"footer-information\">Point 1</a>\r\n            </li>\r\n          </ul>\r\n        </div>\r\n        <div class=\"col m3 s12\">\r\n          <p class=\"footer-paragraph\">\r\n            Column 2\r\n          </p>\r\n          <ul>\r\n            <li>\r\n              <a href=\"#\" class=\"footer-information\">Point 1</a>\r\n            </li>\r\n            <li>\r\n              <a href=\"#\" class=\"footer-information\">Point 2</a>\r\n            </li>\r\n            <li>\r\n              <a href=\"#\" class=\"footer-information\">Point 3</a>\r\n            </li>\r\n            <li>\r\n              <a href=\"#\" class=\"footer-information\">Point 4</a>\r\n            </li>\r\n          </ul>\r\n        </div>\r\n        <div class=\"col m3 s12\">\r\n          <p class=\"footer-paragraph\">\r\n            Column 3\r\n          </p>\r\n          <ul>\r\n            <li>\r\n              <a href=\"#\" class=\"footer-information\">Point 1</a>\r\n            </li>\r\n            <li>\r\n              <a href=\"#\" class=\"footer-information\">Point 2</a>\r\n            </li>\r\n          </ul>\r\n        </div>\r\n        <div class=\"col m3 s12\">\r\n          <p class=\"social-icons-paragraph\">\r\n            <a class=\"white-text\"><i class=\"fa fa-github\" aria-hidden=\"true\"></i></a>\r\n            <a class=\"white-text\"><i class=\"fa fa-paypal\" aria-hidden=\"true\"></i></a>\r\n          </p>\r\n          <ul>\r\n            <li>\r\n              <a href=\"#\" class=\"footer-information\">Point 1</a>\r\n            </li>\r\n            <li>\r\n              <a href=\"#\" class=\"footer-information\">Point 2</a>\r\n            </li>\r\n            <li>\r\n              <a href=\"#\" class=\"footer-information\">Point 3</a>\r\n            </li>\r\n          </ul>\r\n        </div>\r\n      </div>\r\n    </div>\r\n  </footer>\r\n";
+	module.exports = "\r\n  <footer class=\"page-footer teal darken-3\">\r\n    <div class=\"container\">\r\n      <div class=\"row\">\r\n        <div class=\"col m3 s12\">\r\n          <p class=\"footer-paragraph\">\r\n            Column 1\r\n          </p>\r\n          <ul>\r\n            <li>\r\n              <a href=\"#\" class=\"footer-information\">Point 1</a>\r\n            </li>\r\n          </ul>\r\n        </div>\r\n        <div class=\"col m3 s12\">\r\n          <p class=\"footer-paragraph\">\r\n            Column 2\r\n          </p>\r\n          <ul>\r\n            <li>\r\n              <a href=\"#\" class=\"footer-information\">\r\n                Point 1\r\n              </a>\r\n            </li>\r\n            <li>\r\n              <a href=\"#\" class=\"footer-information\">\r\n                Point 2\r\n              </a>\r\n            </li>\r\n            <li>\r\n              <a href=\"#\" class=\"footer-information\">\r\n                Point 3\r\n              </a>\r\n            </li>\r\n            <li>\r\n              <a href=\"#\" class=\"footer-information\">\r\n                Point 4\r\n              </a>\r\n            </li>\r\n          </ul>\r\n        </div>\r\n        <div class=\"col m3 s12\">\r\n          <p class=\"footer-paragraph\">\r\n            Column 3\r\n          </p>\r\n          <ul>\r\n            <li>\r\n              <a href=\"#\" class=\"footer-information\">\r\n                Point 1\r\n              </a>\r\n            </li>\r\n            <li>\r\n              <a href=\"#\" class=\"footer-information\">\r\n                Point 2\r\n              </a>\r\n            </li>\r\n          </ul>\r\n        </div>\r\n        <div class=\"col m3 s12\">\r\n          <p class=\"social-icons-paragraph\">\r\n            <a class=\"white-text\">\r\n              <i class=\"fa fa-github\" aria-hidden=\"true\"></i>\r\n            </a>\r\n            <a class=\"white-text\">\r\n              <i class=\"fa fa-paypal\" aria-hidden=\"true\"></i>\r\n            </a>\r\n          </p>\r\n          <ul>\r\n            <li>\r\n              <a href=\"#\" class=\"footer-information\">\r\n                Point 1\r\n              </a>\r\n            </li>\r\n            <li>\r\n              <a href=\"#\" class=\"footer-information\">\r\n                Point 2\r\n              </a>\r\n            </li>\r\n            <li>\r\n              <a href=\"#\" class=\"footer-information\">\r\n                Point 3\r\n              </a>\r\n            </li>\r\n          </ul>\r\n        </div>\r\n      </div>\r\n    </div>\r\n  </footer>\r\n";
 
 /***/ },
 /* 21 */
@@ -27528,7 +27551,7 @@
 /* 25 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = "\r\n  <div class=\"row\">\r\n    <div class=\"col s12\">\r\n      <div class=\"card\">\r\n      <div class=\"card-image waves-effect waves-block waves-light\">\r\n        <img class=\"activator\" src=\"" + __webpack_require__(26) + "\" />\r\n      </div>\r\n      <div class=\"card-content\">\r\n        <span class=\"card-title activator grey-text text-darken-4\">vue-materializecss-boilerplate<i class=\"material-icons right\">more_vert</i></span>\r\n        <p><a>A starting point for creating projects with vue.js and materializecss.</a></p>\r\n      </div>\r\n      <div class=\"card-reveal\">\r\n        <span class=\"card-title grey-text text-darken-4\">Fast instructions<i class=\"material-icons right\">close</i></span>\r\n        <p>For full instructions see here: <a>Link</a></p>\r\n      </div>\r\n    </div>\r\n    </div>\r\n  </div>\r\n";
+	module.exports = "\r\n  <div class=\"row\">\r\n    <div class=\"col s12\">\r\n      <div class=\"card\">\r\n      <div class=\"card-image waves-effect waves-block waves-light\">\r\n        <img class=\"activator\" src=\"" + __webpack_require__(26) + "\" />\r\n      </div>\r\n      <div class=\"card-content\">\r\n        <span class=\"card-title activator grey-text text-darken-4\">\r\n          vue-materializecss-boilerplate<i class=\"material-icons right\">more_vert</i>\r\n        </span>\r\n        <p>\r\n          <a>\r\n            A starting point for creating projects with vue.js and materializecss.\r\n          </a>\r\n        </p>\r\n      </div>\r\n      <div class=\"card-reveal\">\r\n        <span class=\"card-title grey-text text-darken-4\">\r\n          Fast instructions<i class=\"material-icons right\">close</i>\r\n        </span>\r\n        <p>\r\n          For full instructions see here: <a>Link</a>\r\n        </p>\r\n      </div>\r\n    </div>\r\n    </div>\r\n  </div>\r\n";
 
 /***/ },
 /* 26 */
