@@ -21,13 +21,13 @@ main {
 </style>
 
 <script>
-  import Navbar from './navbar.vue';
-  import FooterBar from './footer-bar.vue'
-  export default {
-    name: "App",
-    components: {
-      Navbar,
-      FooterBar
+import Navbar from './navbar.vue';
+import FooterBar from './footer-bar.vue'
+export default {
+ name: "App",
+  components: {
+    Navbar,
+    FooterBar
   }
 }
 
