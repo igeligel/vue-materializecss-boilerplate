@@ -24,6 +24,7 @@
 
 <script>
 import _ from 'lodash';
+
 module.exports = {
   props: {
   },
@@ -31,7 +32,7 @@ module.exports = {
     return {
       menu: [{
         name: 'Home',
-        active: true,
+        active: false,
         path: '/home'
       }, {
         name: 'Test',
@@ -40,15 +41,24 @@ module.exports = {
       }]
     }
   },
-  ready: function () {
-
-  },
   methods: {
     makeActive: function(menuEntry, event) {
       this.menu.forEach(function(element) { element.active = false; });
       var obj = _.find(this.menu, function(obj) { return obj.name === menuEntry.name });
-      obj.active = true;
+      if (obj !== undefined) {
+        obj.active = true;
+      }
+    },
+    makeActiveByPath: function(path) {
+      this.menu.forEach(function(element) { element.active = false; });
+      var obj = _.find(this.menu, function(obj) { return obj.path === path });
+      if (obj !== undefined) {
+        obj.active = true;
+      }
     }
+  },
+  ready: function () {
+    this.makeActiveByPath(this.$route.path);
   },
   computed: {
   }
