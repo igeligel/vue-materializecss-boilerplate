@@ -22,10 +22,12 @@ router.map({
 
 router.afterEach(function(transition) {
     removeElementsByClass('vuescripts');
+
     if (transition.to.path === '/test') {
+      console.log('add js');
       loadjscssfile('src/js/modals.js', 'js', false);
       loadjscssfile('src/js/parallax.js', 'js', false);
-      loadjscssfile('src/js/dropdown.js', 'js', false);
+      loadjscssfile('src/js/collapsible.js', 'js', false);
       loadjscssfile('src/js/tabs.js', 'js', false);
     }
 });
