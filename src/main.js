@@ -26,6 +26,7 @@ router.afterEach(function(transition) {
       loadjscssfile('src/js/modals.js', 'js', false);
       loadjscssfile('src/js/parallax.js', 'js', false);
       loadjscssfile('src/js/dropdown.js', 'js', false);
+      loadjscssfile('src/js/tabs.js', 'js', false);
     }
 });
 
