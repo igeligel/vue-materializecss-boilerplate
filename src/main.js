@@ -22,17 +22,14 @@ router.map({
 
 router.afterEach(function(transition) {
     removeElementsByClass('vuescripts');
-    loadjscssfile('https://code.jquery.com/jquery-2.1.1.min.js', 'js', false);
-    loadjscssfile('https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/js/materialize.min.js', 'js', false);
     if (transition.to.path === '/test') {
       loadjscssfile('src/js/modals.js', 'js', false);
       loadjscssfile('src/js/parallax.js', 'js', false);
+      loadjscssfile('src/js/dropdown.js', 'js', false);
     }
 });
 
 router.start(App, '#app', function() {
-  loadjscssfile('https://code.jquery.com/jquery-2.1.1.min.js', 'js', false);
-  loadjscssfile('https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/js/materialize.min.js', 'js', false);
   loadjscssfile('src/js/sidebar.js', 'js', true);
 });
 
