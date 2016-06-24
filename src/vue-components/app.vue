@@ -6,7 +6,7 @@
         <router-view></router-view>
       </div>
     </main>
-    <footer-bar></footer-bar>
+    <footer-content></footer-content>
   </div>
 </template>
 
@@ -24,12 +24,13 @@ main {
 
 <script>
 import Navbar from './navbar.vue';
-import FooterBar from './footer-bar.vue'
+import FooterContent from './main-slots/footer.vue'
+
 export default {
  name: "App",
   components: {
-    Navbar,
-    FooterBar
+    'navbar': Navbar,
+    'footer-content': FooterContent
   }
 }
 

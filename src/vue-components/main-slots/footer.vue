@@ -116,6 +116,17 @@ module.exports = {
   },
   data() {
     return {
+      columns: {
+        first-column: {
+
+        }, second-column: {
+
+        }, third-column: {
+
+        }, fourth-column: {
+          
+        }
+      }
     }
   },
   computed: {
