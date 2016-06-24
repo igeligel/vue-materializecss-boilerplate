@@ -3,85 +3,20 @@
     <div class="container">
       <div class="row">
         <div class="col m3 s12">
-          <p class="footer-paragraph">
-            Column 1
-          </p>
-          <ul>
-            <li>
-              <a href="#" class="footer-information">Point 1</a>
-            </li>
-          </ul>
+          <text-footer-column
+            :column="columns.firstColumn"></text-footer-column>
         </div>
         <div class="col m3 s12">
-          <p class="footer-paragraph">
-            Column 2
-          </p>
-          <ul>
-            <li>
-              <a href="#" class="footer-information">
-                Point 1
-              </a>
-            </li>
-            <li>
-              <a href="#" class="footer-information">
-                Point 2
-              </a>
-            </li>
-            <li>
-              <a href="#" class="footer-information">
-                Point 3
-              </a>
-            </li>
-            <li>
-              <a href="#" class="footer-information">
-                Point 4
-              </a>
-            </li>
-          </ul>
+          <text-footer-column
+            :column="columns.secondColumn"></text-footer-column>
         </div>
         <div class="col m3 s12">
-          <p class="footer-paragraph">
-            Column 3
-          </p>
-          <ul>
-            <li>
-              <a href="#" class="footer-information">
-                Point 1
-              </a>
-            </li>
-            <li>
-              <a href="#" class="footer-information">
-                Point 2
-              </a>
-            </li>
-          </ul>
+          <text-footer-column
+            :column="columns.thirdColumn"></text-footer-column>
         </div>
         <div class="col m3 s12">
-          <p class="social-icons-paragraph">
-            <a class="white-text">
-              <i class="fa fa-github" aria-hidden="true"></i>
-            </a>
-            <a class="white-text">
-              <i class="fa fa-paypal" aria-hidden="true"></i>
-            </a>
-          </p>
-          <ul>
-            <li>
-              <a href="#" class="footer-information">
-                Point 1
-              </a>
-            </li>
-            <li>
-              <a href="#" class="footer-information">
-                Point 2
-              </a>
-            </li>
-            <li>
-              <a href="#" class="footer-information">
-                Point 3
-              </a>
-            </li>
-          </ul>
+          <icon-header-text-column
+            :column="columns.fourthColumn"></icon-header-text-column>
         </div>
       </div>
     </div>
@@ -109,7 +44,14 @@
 </style>
 
 <script>
+import TextColumn from './footer-components/text-column.vue';
+import IconHeaderTextColumn from './footer-components/icon-header-text-column.vue';
+
 module.exports = {
+  components: {
+    'text-footer-column': TextColumn,
+    'icon-header-text-column': IconHeaderTextColumn
+  },
   props: {
   },
   ready: function () {
@@ -117,14 +59,45 @@ module.exports = {
   data() {
     return {
       columns: {
-        first-column: {
-
-        }, second-column: {
-
-        }, third-column: {
-
-        }, fourth-column: {
-          
+        firstColumn: {
+          title: 'This project',
+          subList: [{
+              title: 'GitHub Repository',
+              url: 'https://github.com/igeligel/vue-materializecss-boilerplate'
+            }
+          ]
+        },
+        secondColumn: {
+          title: 'Documentation',
+          subList: [{
+              title: 'at GitHub',
+              url: 'https://github.com/igeligel/vue-materializecss-boilerplate'
+            }, {
+              title: 'at this site',
+              url: 'https://github.com/igeligel/vue-materializecss-boilerplate'
+            }
+          ]
+        },
+        thirdColumn: {
+          title: '',
+          subList: []
+        },
+        fourthColumn: {
+          icons: [{
+            fontAwesomeIcon: 'fa-github',
+            url: 'https://github.com/igeligel/vue-materializecss-boilerplate'
+          }, {
+            fontAwesomeIcon: 'fa-paypal',
+            url: 'https://www.google.com'
+          }],
+          subList: [{
+              title: 'GitHub Repository',
+              url: 'https://github.com/igeligel/vue-materializecss-boilerplate'
+            }, {
+              title: 'GitHub Repository 2',
+              url: 'https://github.com/igeligel/vue-materializecss-boilerplate'
+            }
+          ]
         }
       }
     }
