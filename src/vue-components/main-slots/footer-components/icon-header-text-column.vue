@@ -1,7 +1,7 @@
 <template>
   <p class="social-icons-paragraph">
     <template v-for="item in column.icons">
-      <a class="white-text" :href="item.url">
+      <a class="white-text" :href="item.url" target="_blank" rel="noopener noreferrer">
         <i aria-hidden="true" :class="'fa ' + item.fontAwesomeIcon" target="_blank" rel="noopener noreferrer"></i>
       </a>
     </template>

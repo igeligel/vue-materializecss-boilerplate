@@ -2,7 +2,10 @@
   <header>
     <nav class="white" role="navigation">
       <div class="nav-wrapper container">
-        <a id="logo-container" v-link="{ path: '/home'}" class="brand-logo" style="color: #616161">vue-materializecss-boilerplate</a>
+        <a id="logo-container" v-link="{ path: '/home'}" class="brand-logo hide-on-small-only" style="color: #616161" v-on:click="makeActiveByPath('/home')">vue-materializecss-boilerplate</a>
+        <a id="logo-container" v-link="{ path: '/home'}" class="brand-logo hide-on-med-and-up" v-on:click="makeActiveByPath('/home')">
+          <img height="56" width="56" src="../../static/favicon-62.png" />
+        </a>
         <ul class="right hide-on-med-and-down">
           <template v-for="menuEntry in menu">
             <li v-bind:class="{ active : menuEntry.active}"><a v-link="{ path: menuEntry.path}" style="color: #00897b" v-on:click="makeActive(menuEntry, $event)">{{menuEntry.name}}</a></li>
