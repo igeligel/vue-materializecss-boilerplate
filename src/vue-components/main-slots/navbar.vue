@@ -38,9 +38,9 @@ module.exports = {
         active: false,
         path: '/home'
       }, {
-        name: 'Test',
+        name: 'Examples',
         active: false,
-        path: '/test'
+        path: '/examples'
       }]
     }
   },

@@ -1,7 +1,7 @@
 import Vue from 'vue';
 import App from './vue-components/app.vue';
 import Home from './vue-components/home.vue';
-import Test from './vue-components/test.vue';
+import Examples from './vue-components/examples.vue';
 import VueRouter from 'vue-router';
 
 Vue.use(VueRouter);
@@ -15,16 +15,15 @@ router.map({
   'home': {
     component: Home
   },
-  '/test': {
-    component: Test
+  '/examples': {
+    component: Examples
   }
 });
 
 router.afterEach(function(transition) {
     removeElementsByClass('vuescripts');
 
-    if (transition.to.path === '/test') {
-      console.log('add js');
+    if (transition.to.path === '/examples') {
       loadjscssfile('src/js/modals.js', 'js', false);
       loadjscssfile('src/js/parallax.js', 'js', false);
       loadjscssfile('src/js/collapsible.js', 'js', false);

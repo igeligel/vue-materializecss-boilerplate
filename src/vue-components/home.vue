@@ -1,7 +1,7 @@
 <template>
   <div class="row">
     <div class="col s12">
-      <div class="card">
+      <div class="card hoverable">
       <div class="card-image waves-effect waves-block waves-light">
         <img class="activator" src="../assets/images/banner.png" />
       </div>
@@ -17,10 +17,13 @@
       </div>
       <div class="card-reveal">
         <span class="card-title grey-text text-darken-4">
-          Fast instructions<i class="material-icons right">close</i>
+          Here is the header of the card.<i class="material-icons right">close</i>
         </span>
         <p>
-          For full instructions see here: <a>Link</a>
+          Description of the card.
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
         </p>
       </div>
     </div>

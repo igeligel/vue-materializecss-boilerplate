@@ -23,7 +23,7 @@ main {
 </style>
 
 <script>
-import Navbar from './navbar.vue';
+import Navbar from './main-slots/navbar.vue';
 import FooterContent from './main-slots/footer.vue'
 
 export default {
